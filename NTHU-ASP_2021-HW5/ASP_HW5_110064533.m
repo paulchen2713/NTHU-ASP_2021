@@ -1,5 +1,5 @@
 % 
-% Adaptive Signal Processing HW5, ≥q∞T©“§@¶~Ø≈ 110064533 ≥Ø o“≤
+% Adaptive Signal Processing HW5, ÈÄöË®äÊâÄ‰∏ÄÂπ¥Á¥ö 110064533 Èô≥Âä≠Áè©
 % 
 % System Specifications
 % - Assume f_0 = 0.
@@ -11,10 +11,10 @@
 % - The adaptive filter length is L = 6
 % 
 % Parameter Settings
-% - For the LMS algorithm, £\ is determined by yourself.
-% - For the NLMS algorithm, £\ is determined by yourself and c = 10^-3
+% - For the LMS algorithm, Œ± is determined by yourself.
+% - For the NLMS algorithm, Œ± is determined by yourself and c = 10^-3
 % - For the VS-LMS algorithm, c1 = 0.9, c2 = 1.1 and N1 = N2 = 3. 
-%   Also, £\_max and £\_min are determined by yourself.
+%   Also, Œ±_max and Œ±_min are determined by yourself.
 % 
 clear;
 clc;
@@ -28,7 +28,7 @@ H = [0.227 0.460 0.688 0.460 0.227]; % five-point impulse response h(n)
 C_NLMS = 0.001;      % c  = 10^-3 for NLMS
 C_VSLMS = [0.9 1.1]; % c1 = 0.9, c2 = 1.1 for VS-LMS
 % 
-step_size_range = 0.01 : 0.02 : 0.09;    % user-defined step size £\ range
+step_size_range = 0.01 : 0.02 : 0.09;    % user-defined step size Œ± range
 step_size_len = length(step_size_range); % 
 num_trial = 100;
 % 
@@ -206,3 +206,5 @@ fname = 'Average Squared Error.png'; % save as Average Squared Error.png
 print(fname, '-dpng');
 % 
 %
+
+
