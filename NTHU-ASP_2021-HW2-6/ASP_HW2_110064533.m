@@ -1,20 +1,20 @@
 % 
-% ASP_HW2 ²Ä6ÃD ³q°T©Ò¤@¦~¯Å 110064533 ³¯ÊoÒ²
+% ASP_HW2 ç¬¬6é¡Œ é€šè¨Šæ‰€ä¸€å¹´ç´š 110064533 é™³åŠ­ç©
 % 
 clear;
 clc;
 % 
 % (1) Generate a stationary Gaussian random signal with samples x(n) for 
-%     n = 0, 1, 2, ¡K, M-1 using MATLAB, where M=100. Then estimate the 
+%     n = 0, 1, 2, â€¦, M-1 using MATLAB, where M=100. Then estimate the 
 %     correlation of the random signal based on each of the two estimators,
-%     i.e., compute r_hat(m) and r_prime(m) for m = -M+1, ¡K, M-1. From the 
+%     i.e., compute r_hat(m) and r_prime(m) for m = -M+1, â€¦, M-1. From the 
 %     simulation results, show that r_hat(m) has high variability for m > M/4.
 % 
 % (2) Let R be a correlation matrix of the random signal x(n). It is known 
 %     that R is a positive semi-definite matrix if the true correlation 
 %     values are used. How is the positive semidefinite property of R if 
 %     the true correlation values are replaced with the estimates
-%     r_hat(m) or r_prime(m) for m = 0, 1, 2, ¡K, 24 and m = 0, 1, 2, ¡K, 99? 
+%     r_hat(m) or r_prime(m) for m = 0, 1, 2, â€¦, 24 and m = 0, 1, 2, â€¦, 99? 
 %     Justify your answers.
 % 
 M = 100;         % number of points
@@ -87,5 +87,4 @@ stem(diag_v4, 'rd');
 title('the eigenvalues of the biased estimator, R_{100x100}');
 % 
 % 
-
 
